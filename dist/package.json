@@ -1,0 +1,10 @@
+{
+ "name": "polar-shades",
+ "version": "1.0.0",
+ "description": "site showcase",
+ "author": "Stephen Ward",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
