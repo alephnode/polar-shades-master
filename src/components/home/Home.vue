@@ -54,7 +54,7 @@ a {
 .retailIntro::after {
   border-right: 2px solid white;
   content: "";
-  background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.9)),url('../../assets/ps_retail.jpg');
+  background: linear-gradient(to bottom,rgba(20,20,20,0.1),rgba(25,25,25,0.7)),url('../../assets/polar_retail.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -67,7 +67,7 @@ a {
 
 .manufacturingIntro::after {
   content: "";
-  background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.9)),url('../../assets/ps_manufacturing.jpg');
+  background: linear-gradient(to bottom,rgba(20,20,20,0.1),rgba(25,25,25,0.7)),url('../../assets/polar_manufacturing.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;

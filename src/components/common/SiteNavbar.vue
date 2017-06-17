@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <router-link v-bind:to="'/'" class="navbar-brand">
-           <img src="../../assets/logo.png" />
+           <img src="../../assets/ps_logo_site.png" />
       </router-link>
     </div>
     <ul class="nav navbar-nav">
@@ -44,13 +44,24 @@ export default {
 
 <style scoped>
 
+@font-face {
+    font-family: "Museo";
+    src: url("../../assets/fonts/MuseoSans_500-webfont.woff") format('woff');
+}
+
 #ps-nav {
   margin-bottom: 0px;
   height: 100px;
   padding-top: 5px;
   font-weight: 300;
   color: black;
-  font-size: 16px
+  font-size: 17px;
+  background: white;
+  font-family: 'Museo';
+}
+
+#ps-nav a {
+  color: #555
 }
 
 .search-icon-section {
@@ -60,7 +71,7 @@ export default {
 }
 
 img {
-  width: 200px
+  width: 170px
 }
 
 .quoteText {
@@ -69,7 +80,7 @@ img {
 }
 
 .navbar-brand {
-  padding-top:0px
+  padding-top: 3px
 }
 
 .navbar-nav {

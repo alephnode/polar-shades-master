@@ -34,7 +34,7 @@ export default {
 
   a {
     font-size: 18px;
-    color: #F3B741
+    color: white
   }
 
   a:hover {
