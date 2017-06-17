@@ -14,6 +14,8 @@ export default {
 
 <style scoped>
   .site-divide-container {
+    border-top: none!important;
+    border-bottom: none!important;
     height: 80vh;
     display: flex;
     flex-direction: column;

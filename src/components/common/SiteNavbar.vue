@@ -7,18 +7,18 @@
       </router-link>
     </div>
     <ul class="nav navbar-nav">
-      <li v-show="retailRoute"><router-link v-bind:to="'/retail'">Retail Work</router-link></li>
+      <li><router-link v-bind:to="'/about'">About</router-link></li>
+      <li v-show="!businessRoute"><router-link v-bind:to="'/retail'">Retail</router-link></li>
       <li v-show="retailRoute"><router-link v-bind:to="'retail/products'">Retail Category 1</router-link></li>
       <li v-show="retailRoute"><router-link v-bind:to="'/retail/products'">Retail Category 2</router-link></li>
-      <li v-show="businessRoute"><router-link v-bind:to="'/business'">Business Work</router-link></li>
+      <li><router-link v-bind:to="'/business'">Business</router-link></li>
       <li v-show="businessRoute"><router-link v-bind:to="'/business/products'">Business Category 1</router-link></li>
       <li v-show="businessRoute"><router-link v-bind:to="'/business/products'">Business Category 2</router-link></li>
-      <li><router-link v-bind:to="'/about'">About</router-link></li>
-      <li><router-link v-bind:to="'/contact'">Contact</router-link></li>
+      <li v-show="businessRoute"><router-link v-bind:to="'/retail'">Retail</router-link></li>
     </ul>
 
     <div class="pull-right search-icon-section">
-      <div class="quoteText">Request a Quote</div> <i class="glyphicon glyphicon-search"></i>
+      <router-link v-bind:to="'/contact'"><div class="quoteText">I Want a Quote! <i class="glyphicon glyphicon-pencil"></i></div></router-link>
     </div>
   </div>
 </nav>
@@ -58,14 +58,20 @@ export default {
   font-size: 17px;
   background: white;
   font-family: 'Museo';
+  border: none!important
 }
 
 #ps-nav a {
-  color: #555
+  color: #555;
+  transition: all 0.25s ease;
+}
+
+#ps-nav a:hover {
+  color: #ffb900;
 }
 
 .search-icon-section {
-  padding-top: 33px;
+  padding-top: 36px;
   padding-right: 10px;
   color: #777
 }
@@ -77,6 +83,20 @@ img {
 .quoteText {
   display: inline;
   margin-right: 20px;
+  padding: 10px 20px;
+  background: #71D58E;
+  color: white;
+
+  border-radius: 4px;
+}
+
+#ps-nav .search-icon-section a:hover, #ps-nav .search-icon-section a:active, #ps-nav .search-icon-section a:visited {
+  text-decoration: none!important;
+  color: none
+}
+
+#ps-nav .quoteText:hover {
+  background: #4CbA6C;
 }
 
 .navbar-brand {
@@ -87,5 +107,9 @@ img {
   padding-top: 20px
 }
 
+.glyphicon-pencil {
+  font-size: 14px;
+  padding-left: 5px
+}
 
 </style>

@@ -52,27 +52,17 @@ export default {
 <!-- styling for the component -->
 <style>
 
-#aboutPageLede::after {
-  content: "";
+#aboutPageLede {
   background: linear-gradient(to bottom,rgba(60,60,60,0.1),rgba(90,90,90,0.5)),url('../../assets/polar.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
   z-index: -1;
-}
-
-#aboutPageLede {
-  height: 84vh;
+  height: auto;
+  min-height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background: url('../../assets/polar.jpg');
-  background-size: cover;*/
   font-size: 100px;
   color: white;
   font-family:  'Raleway', sans-serif;

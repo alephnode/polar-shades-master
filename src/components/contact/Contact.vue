@@ -1,10 +1,12 @@
 <template>
   <div id="contactUsPage">
     <div id="contactPageLede">
-      Contact Us
+      Get in Touch
     </div>
-    <div id="contact">
-      This is the contact page
+    <div class="container" id="contact">
+      <p>
+        Need a quote? You've come to the right place. From general questions to dimension or style breakdowns, we're here to help. Please provide your information below and a talented member of our staff will get back to you as quickly as possible!
+      </p>
     </div>
     <div class="container">
 
@@ -14,10 +16,9 @@
       <!-- Text input-->
 
       <div class="form-group">
-        <label class="col-md-4 control-label">First Name</label>
-        <div class="col-md-4 inputGroupContainer">
+        <label class="col-md-2 col-md-offset-2 control-label">First Name</label>
+        <div class="col-md-6 inputGroupContainer">
         <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
         <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
           </div>
         </div>
@@ -26,10 +27,9 @@
       <!-- Text input-->
 
       <div class="form-group">
-        <label class="col-md-4 control-label" >Last Name</label>
-          <div class="col-md-4 inputGroupContainer">
+        <label class="col-md-2 col-md-offset-2 control-label" >Last Name</label>
+          <div class="col-md-6 inputGroupContainer">
           <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
         <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
           </div>
         </div>
@@ -37,10 +37,9 @@
 
       <!-- Text input-->
              <div class="form-group">
-        <label class="col-md-4 control-label">E-Mail</label>
-          <div class="col-md-4 inputGroupContainer">
+        <label class="col-md-2 col-md-offset-2 control-label">Email</label>
+          <div class="col-md-6 inputGroupContainer">
           <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
         <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
           </div>
         </div>
@@ -50,10 +49,9 @@
       <!-- Text input-->
 
       <div class="form-group">
-        <label class="col-md-4 control-label">Phone #</label>
-          <div class="col-md-4 inputGroupContainer">
+        <label class="col-md-2 col-md-offset-2 control-label">Phone</label>
+          <div class="col-md-6 inputGroupContainer">
           <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
         <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
           </div>
         </div>
@@ -62,10 +60,9 @@
       <!-- Text area -->
 
       <div class="form-group">
-        <label class="col-md-4 control-label">Project Description</label>
-          <div class="col-md-4 inputGroupContainer">
+        <label class="col-md-2 col-md-offset-2 control-label">Description</label>
+          <div class="col-md-6 inputGroupContainer">
           <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
               	<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
         </div>
         </div>
@@ -73,9 +70,8 @@
 
       <!-- Button -->
       <div class="form-group">
-        <label class="col-md-4 control-label"></label>
-        <div class="col-md-4">
-          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+        <div class="col-md-10">
+          <button type="submit" class="pull-right btn" >Send <span class="glyphicon glyphicon-send"></span></button>
         </div>
       </div>
       </fieldset>
@@ -92,12 +88,27 @@ export default {
 <!-- styling for the component -->
 <style>
 #contactPageLede {
-  height: 35vh;
+  height: auto;
+  min-height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eee;
+  background: linear-gradient(to bottom,rgba(60,60,60,0.1),rgba(90,90,90,0.5)),url('../../assets/ps_contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 100px;
+  color: white;
+  font-family:  'Raleway', sans-serif;
+  text-shadow: 0 1px 3px rgba(0,0,0,.6);
+}
+
+#contactUsPage .btn {
+  padding: 10px 40px;
+  color: white;
+  font-size: 18px;
+  background: #ffb900;
+  margin: 25px auto 80px auto;
 }
 
 #contact {
@@ -109,4 +120,41 @@ export default {
   margin: 60px auto;
   border-bottom: none
 }
+
+#contactUsPage .input-group input {
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+#contactUsPage .input-group textarea {
+  height: 90px;
+  box-shadow: none;
+  border-radius: 5px
+}
+
+#contactUsPage .form-group label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-group {
+  width: 100%;
+}
+
+#contact p {
+  font-size: 22px;
+  line-height: 2.1em;
+  text-align: left;
+  margin: 0px auto 35px auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  #contact p {
+    width: 100%;
+    font-size: 18px
+  }
+}
+
 </style>
