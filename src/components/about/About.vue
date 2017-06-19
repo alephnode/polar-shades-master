@@ -5,7 +5,10 @@
     </div>
     <div class="container" id="about">
       <p>
-        Polar Shades Sun Control corporate office and manufacturing division is located in Henderson, Nevada, just 15 minutes from the “Strip” in Las Vegas. A family owned business started in 1995 by its current owner, Steve Mevius, Polar Shades Sun Control manufactures interior and exterior window covering products. What once was an operation for products installed locally in Las Vegas, has now grown into a major manufacturing company providing their products all over the US, Canada, and Europe. What started as a backyard hobby making solar screens has turned into a passion of creating the best quality products with the best warranty and the best customer service in the industry.
+        Polar Shades Sun Control corporate office and manufacturing division is located in Henderson, Nevada, just 15 minutes from the “Strip” in Las Vegas.
+      </p>
+      <p>
+        A family owned business started in 1995 by its current owner, Steve Mevius, Polar Shades Sun Control manufactures interior and exterior window covering products. What once was an operation for products installed locally in Las Vegas, has now grown into a major manufacturing company providing their products all over the US, Canada, and Europe. What started as a backyard hobby making solar screens has turned into a passion of creating the best quality products with the best warranty and the best customer service in the industry.
       </p>
 
       <p>
@@ -26,7 +29,7 @@
     </div>
     <div class="container-fluid" id="mission">
       <div class="missionTitle">
-        Mission
+        Our Mission
       </div>
       <div class="missionSection">
         <p>
@@ -35,10 +38,10 @@
         <p>
           We deliver superior customer service second to none, with 'Honesty and Integrity' - the principles our company is founded on."
         </p>
-        <p>
+        <div class="signature">
           Steve Mevius, President<br/>
           Polar Shades, Inc.
-        </p>
+        </div>
       </div>
     </div>
   </div>
@@ -76,6 +79,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  border-bottom: none;
 }
 
 #about p {
@@ -84,6 +88,41 @@ export default {
   text-align: left;
   margin: 0px auto 35px auto;
   width: 80%;
+}
+
+#mission p, #mission .signature {
+  color: white;
+  font-size: 20px;
+  line-height: 2em;
+  font-style: italic;
+  text-align: left;
+  margin: 10px auto 0px auto;
+  width: 75%;
+  text-shadow: 0 2px 4px rgba(0,0,0,.8);
+}
+
+#mission .signature {
+  margin-top: 40px;
+  font-style: normal;
+}
+
+#mission {
+  padding: 60px 0px;
+  background: linear-gradient(to bottom,rgba(60,60,60,0.3),rgba(0,0,0,0.9)),url('../../assets/ps_factory.jpg');
+  background-size: cover;
+  height: auto;
+  min-height: 500px;
+  background-repeat: no-repeat
+}
+
+.missionTitle {
+  text-align: left;
+  width: 80%;
+  margin: 0px auto;
+  font-size: 64px;
+  color: #ffb900;
+  font-family:  'Raleway', sans-serif;
+  text-shadow: 0 1px 3px rgba(0,0,0,.6);
 }
 
 @media screen and (max-width: 768px) {

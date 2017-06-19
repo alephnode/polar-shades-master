@@ -2,8 +2,12 @@
   <div class="home">
     <div class="container-fluid">
       <div class="row">
-          <site-divide-container class="retailIntro" title="Retail"><router-link v-bind:to="'/retail'">Learn more about our custom installations in the Las Vegas valley</router-link></site-divide-container>
-        <site-divide-container class="manufacturingIntro" title="Manufacturing"><router-link v-bind:to="'/business'">Explore our business and manufacturing offerings</router-link> </site-divide-container>
+          <div class="retailIntroContainer">
+            <site-divide-container class="retailIntro" title="Retail"><router-link v-bind:to="'/retail'">Learn more about our custom installations in the Las Vegas valley</router-link></site-divide-container>
+          </div>
+          <div class="manufacturingIntroContainer">
+            <site-divide-container class="manufacturingIntro" title="Manufacturing"><router-link v-bind:to="'/business'">Explore our business and manufacturing offerings</router-link> </site-divide-container>
+        </div>
       </div>
     </div>
   </div>
@@ -50,6 +54,9 @@ a {
   opacity: 0.8
 }
 
+.retailIntroContainer {
+
+}
 
 .retailIntro::after {
   border-right: 2px solid white;
@@ -76,6 +83,7 @@ a {
   right: 0;
   position: absolute;
   z-index: -1;
+  transition: all 0.25s;
 }
 
 @media screen and (max-width: 991px) {

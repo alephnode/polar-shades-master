@@ -8,7 +8,7 @@
         Need a quote? You've come to the right place. From general questions to dimension or style breakdowns, we're here to help. Please provide your information below and a talented member of our staff will get back to you as quickly as possible!
       </p>
     </div>
-    <div class="container">
+    <div class="container-fluid form-container">
 
     <form class="form-horizontal" action=" " method="post"  id="contact_form">
       <fieldset>
@@ -16,9 +16,9 @@
       <!-- Text input-->
 
       <div class="form-group">
-        <label class="col-md-2 col-md-offset-2 control-label">First Name</label>
-        <div class="col-md-6 inputGroupContainer">
-        <div class="input-group">
+        <label class="control-label col-md-6 col-md-offset-3">First Name</label>
+        <div class="inputGroupContainer">
+        <div class="input-group col-md-6 col-md-offset-3">
         <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
           </div>
         </div>
@@ -27,9 +27,9 @@
       <!-- Text input-->
 
       <div class="form-group">
-        <label class="col-md-2 col-md-offset-2 control-label" >Last Name</label>
-          <div class="col-md-6 inputGroupContainer">
-          <div class="input-group">
+        <label class="control-label col-md-6 col-md-offset-3" >Last Name</label>
+          <div class="inputGroupContainer">
+          <div class="input-group col-md-6 col-md-offset-3">
         <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
           </div>
         </div>
@@ -37,9 +37,9 @@
 
       <!-- Text input-->
              <div class="form-group">
-        <label class="col-md-2 col-md-offset-2 control-label">Email</label>
-          <div class="col-md-6 inputGroupContainer">
-          <div class="input-group">
+        <label class="control-label col-md-6 col-md-offset-3">Email</label>
+          <div class="inputGroupContainer">
+          <div class="input-group col-md-6 col-md-offset-3">
         <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
           </div>
         </div>
@@ -49,9 +49,9 @@
       <!-- Text input-->
 
       <div class="form-group">
-        <label class="col-md-2 col-md-offset-2 control-label">Phone</label>
-          <div class="col-md-6 inputGroupContainer">
-          <div class="input-group">
+        <label class="control-label col-md-6 col-md-offset-3">Phone</label>
+          <div class="inputGroupContainer">
+          <div class="input-group col-md-6 col-md-offset-3">
         <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
           </div>
         </div>
@@ -60,9 +60,9 @@
       <!-- Text area -->
 
       <div class="form-group">
-        <label class="col-md-2 col-md-offset-2 control-label">Description</label>
-          <div class="col-md-6 inputGroupContainer">
-          <div class="input-group">
+        <label class="control-label col-md-6 col-md-offset-3">Description</label>
+          <div class="inputGroupContainer">
+          <div class="input-group col-md-6 col-md-offset-3">
               	<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
         </div>
         </div>
@@ -122,7 +122,7 @@ export default {
 }
 
 #contactUsPage .input-group input {
-  height: 45px;
+  height: 55px;
   border-radius: 5px;
   box-shadow: none;
 }
@@ -136,6 +136,9 @@ export default {
 #contactUsPage .form-group label {
   font-size: 20px;
   font-weight: 500;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px
 }
 
 .input-group {
@@ -148,6 +151,12 @@ export default {
   text-align: left;
   margin: 0px auto 35px auto;
   width: 80%;
+}
+
+.form-container {
+  background: #f8f8f8;
+  width: 100%;
+  padding: 80px 0px;
 }
 
 @media screen and (max-width: 768px) {
