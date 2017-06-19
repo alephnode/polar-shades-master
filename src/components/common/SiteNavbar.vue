@@ -99,8 +99,9 @@ img {
   background: #4CbA6C;
 }
 
-.navbar-brand {
-  padding-top: 3px
+#ps-nav .navbar-brand {
+  padding-top: 3px;
+  margin-left: 10px
 }
 
 .navbar-nav {

@@ -3,10 +3,20 @@
     <div id="aboutPageLede">
       About Us
     </div>
-    <div class="container" id="about">
+    <div class="container" id="about_atf">
       <p>
         Polar Shades Sun Control corporate office and manufacturing division is located in Henderson, Nevada, just 15 minutes from the “Strip” in Las Vegas.
       </p>
+    </div>
+    <div class="container-fluid">
+      <iframe id="mapAbout"
+        width="100%"
+        height="400"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyABHI8ueljiYNIibg58zrJKnz9zrp5cq1M&q=520+East+Sunset+Road,Henderson+NV" allowfullscreen>
+      </iframe>
+    </div>
+    <div class="container" id="about_btf">
       <p>
         A family owned business started in 1995 by its current owner, Steve Mevius, Polar Shades Sun Control manufactures interior and exterior window covering products. What once was an operation for products installed locally in Las Vegas, has now grown into a major manufacturing company providing their products all over the US, Canada, and Europe. What started as a backyard hobby making solar screens has turned into a passion of creating the best quality products with the best warranty and the best customer service in the industry.
       </p>
@@ -72,7 +82,7 @@ export default {
   text-shadow: 0 1px 3px rgba(0,0,0,.6);
 }
 
-#about {
+#about_btf, #about_atf {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -82,7 +92,7 @@ export default {
   border-bottom: none;
 }
 
-#about p {
+#about_btf p, #about_atf p {
   font-size: 22px;
   line-height: 2.1em;
   text-align: left;
@@ -125,8 +135,17 @@ export default {
   text-shadow: 0 1px 3px rgba(0,0,0,.6);
 }
 
+.container-fluid {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+
+#mapAbout {
+  pointer-events: none
+}
+
 @media screen and (max-width: 768px) {
-  #about p {
+  #about_btf p, #about_atf p {
     width: 100%;
     font-size: 18px
   }
