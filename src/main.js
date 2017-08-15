@@ -10,10 +10,12 @@ import Home from './components/home/Home'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import RetailLander from './components/retail/RetailLander'
+import RollerShades from './components/retail/RollerShades'
+import Awnings from './components/retail/Awnings'
+import Shutters from './components/retail/Shutters'
+import DraperiesBlinds from './components/retail/DraperiesBlinds'
 import BusinessLander from './components/business/BusinessLander'
-import RetailProductListPage from './components/retail/RetailProductListPage'
-import IndividualRetailProductPage from './components/retail/IndividualRetailProductPage'
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 //tell vue to use the router
 Vue.use(VueRouter)
@@ -26,9 +28,10 @@ const routes = [
 { path: '/about', component: About },
 { path: '/contact', component: Contact },
 { path: '/retail', component: RetailLander },
-{ path: '/business', component: BusinessLander },
-{ path: '/retail/products', component: RetailProductListPage },
-{ path: '/retail/products/product', component: IndividualRetailProductPage }
+{ path: '/retail/roller-shades', component: RollerShades },
+{ path: '/retail/awnings', component: Awnings },
+{ path: '/retail/shutters', component: Shutters },
+{ path: '/retail/draperies-and-blinds', component: DraperiesBlinds }
 ]
 
 // Create the router instance and pass the `routes` option
