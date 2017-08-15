@@ -11,9 +11,7 @@ import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import RetailLander from './components/retail/RetailLander'
 import BusinessLander from './components/business/BusinessLander'
-import BusinessProductListPage from './components/business/BusinessProductListPage'
 import RetailProductListPage from './components/retail/RetailProductListPage'
-import IndividualBusinessProductPage from './components/business/IndividualBusinessProductPage'
 import IndividualRetailProductPage from './components/retail/IndividualRetailProductPage'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
@@ -29,9 +27,7 @@ const routes = [
 { path: '/contact', component: Contact },
 { path: '/retail', component: RetailLander },
 { path: '/business', component: BusinessLander },
-{ path: '/business/products', component: BusinessProductListPage },
 { path: '/retail/products', component: RetailProductListPage },
-{ path: '/business/products/product', component: IndividualBusinessProductPage },
 { path: '/retail/products/product', component: IndividualRetailProductPage }
 ]
 

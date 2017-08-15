@@ -7,14 +7,14 @@
       </router-link>
     </div>
     <ul class="nav navbar-nav">
-      <li><router-link v-bind:to="'/about'">About</router-link></li>
-      <li v-show="!businessRoute"><router-link v-bind:to="'/retail'">Retail</router-link></li>
-      <li v-show="retailRoute"><router-link v-bind:to="'retail/products'">Retail Category 1</router-link></li>
-      <li v-show="retailRoute"><router-link v-bind:to="'/retail/products'">Retail Category 2</router-link></li>
-      <li><router-link v-bind:to="'/business'">Business</router-link></li>
-      <li v-show="businessRoute"><router-link v-bind:to="'/business/products'">Business Category 1</router-link></li>
-      <li v-show="businessRoute"><router-link v-bind:to="'/business/products'">Business Category 2</router-link></li>
-      <li v-show="businessRoute"><router-link v-bind:to="'/retail'">Retail</router-link></li>
+      <li><router-link v-bind:to="'/about'">Why Polar Shades?</router-link></li>
+      <li v-show="!retailRoute"><router-link v-bind:to="'/retail'">Retail</router-link></li>
+      <li v-show="retailRoute"><router-link v-bind:to="'retail/products'">Roller Shades</router-link></li>
+      <li v-show="retailRoute"><router-link v-bind:to="'/retail/products'">Awnings</router-link></li>
+      <li v-show="retailRoute"><router-link v-bind:to="'/retail/products'">Shutters</router-link></li>
+      <li v-show="retailRoute"><router-link v-bind:to="'/retail/products'">Shutters</router-link></li>
+      <li v-show="retailRoute"><router-link v-bind:to="'/retail/products'">Draperies &amp; Blinds</router-link></li>
+      <li v-show="!retailRoute"><a href="//www.polarshade.com">Business</a></li>
     </ul>
 
     <div class="pull-right search-icon-section">
