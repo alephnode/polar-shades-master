@@ -35,6 +35,7 @@
 
   .footer-text {
     padding-top: 15px;
+    margin-right: 20px;
     font-family: 'Museo'
   }
 
