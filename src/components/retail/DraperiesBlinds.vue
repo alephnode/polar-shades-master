@@ -23,6 +23,7 @@ export default {
 
 
 #dbLede {
+  background-position: 50% 50%;
   background: linear-gradient(to bottom,rgba(60,60,60,0.1),rgba(90,90,90,0.5)),url('../../assets/d-b-main.jpg');
   background-repeat: no-repeat;
   background-size: cover;

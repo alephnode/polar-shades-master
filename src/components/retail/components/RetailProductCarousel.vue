@@ -1,8 +1,7 @@
 <template>
   <div class="container-fluid" id="carousel-container">
     <div class="col-xs-12 retail-product-carousel">
-      <h1>Retail Product Carousel</h1>
-      <slot></slot>
+      <h1>Explore our Work</h1>
     </div>
   </div>
 </template>
@@ -15,7 +14,6 @@ export default {
 
 <style scoped>
   .retail-product-carousel {
-    border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,10 +22,25 @@ export default {
   }
 
   #carousel-container {
-    padding: 0px;
+    background: linear-gradient(to bottom,rgba(60,60,60,0.1),rgba(90,90,90,0.5)),url('../../../assets/retail-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h1 {
-    margin-top: -10px
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    font-family:  'Museo', sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,.6);
+    padding: 0px;
   }
 </style>
