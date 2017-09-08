@@ -1,14 +1,14 @@
 <template>
   <div class="container-fluid" id="description-container">
     <div class="col-xs-12 retail-product-description">
-      <h1>Retail Product Description</h1>
+      <h1>{{ sectionTitle }}</h1>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'retail-product-lander-top-description'
+  name: 'retail-product-lander-top-description', props: ['sectionTitle']
 }
 </script>
 

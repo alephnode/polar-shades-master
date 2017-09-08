@@ -1,9 +1,10 @@
 <template>
   <div>
-    <retail-product-carousel><router-link v-bind:to="'/retail/products'">Click to view more in this category</router-link></retail-product-carousel>
-    <retail-product-lander-top-description></retail-product-lander-top-description>
-    <retail-product-lander-top-description></retail-product-lander-top-description>
-    <retail-product-lander-top-description></retail-product-lander-top-description>
+    <retail-product-carousel></retail-product-carousel>
+    <retail-product-lander-top-description sectionTitle="Draperies &amp; Blinds"></retail-product-lander-top-description>
+    <retail-product-lander-top-description sectionTitle="Awnings"></retail-product-lander-top-description>
+    <retail-product-lander-top-description sectionTitle="Roller Shades"></retail-product-lander-top-description>
+    <retail-product-lander-top-description sectionTitle="Shutters"></retail-product-lander-top-description>
   </div>
 </template>
 
