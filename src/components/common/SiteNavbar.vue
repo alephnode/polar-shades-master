@@ -112,4 +112,26 @@ img {
   padding-left: 5px
 }
 
+@media screen and (max-width: 1110px) {
+  #ps-nav {
+    font-size: 15px;
+  }
+  #ps-nav a {
+    padding-left: 10px;
+    padding-right: 10px
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav, .search-icon-section {
+    display: none
+  }
+  .navbar-header, .navbar-brand {
+    width: 100%;
+  }
+  .navbar-brand img {
+    margin: 0 auto
+  }
+}
+
 </style>

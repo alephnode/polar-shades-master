@@ -1,19 +1,38 @@
 <template>
-  <div class="container-fluid" id="carousel-container">
+  <!-- <div class="container-fluid" id="carousel-container">
     <div class="col-xs-12 retail-product-carousel">
       <h1>Explore our Work</h1>
     </div>
+  </div> -->
+  <div class="par-container">
+    <h1 class="explore-lede">Explore our Work</h1>
+  <parallax>
+    <img class="retialLanderImg" src="../../../assets/retail-hero.jpg" />
+  </parallax>
   </div>
 </template>
 
 <script>
+import Parallax from 'vue-parallaxy'
+
 export default {
-  name: 'retail-product-carousel'
+  name: 'retail-product-carousel', components: {Parallax}
 }
 </script>
 
 <style scoped>
-  .retail-product-carousel {
+
+.retialLanderImg {
+  margin-top: -200px;
+}
+
+.par-container {
+  background: linear-gradient(to bottom,rgba(60,60,60,0.1),rgba(90,90,90,0.5));
+  max-height: 520px;
+  overflow: hidden
+}
+
+  /*.retail-product-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,10 +52,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  }*/
 
   h1 {
     font-size: 100px;
+    position: absolute;
+    top: 35%;
+    width: 100%;
     color: white;
     font-weight: bold;
     font-family:  'Museo', sans-serif;
