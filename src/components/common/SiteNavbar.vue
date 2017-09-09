@@ -11,8 +11,7 @@
       <li v-show="!retailRoute"><router-link v-bind:to="'/retail'">Retail</router-link></li>
       <li v-show="retailRoute"><router-link v-bind:to="'/retail/awnings'">Awnings</router-link></li>
       <li v-show="retailRoute"><router-link v-bind:to="'/retail/roller-shades'">Roller Shades</router-link></li>
-      <li v-show="retailRoute"><router-link v-bind:to="'/retail/shutters'">Shutters</router-link></li>
-      <li v-show="retailRoute"><router-link v-bind:to="'/retail/draperies-and-blinds'">Draperies &amp; Blinds</router-link></li>
+      <li v-show="retailRoute"><router-link v-bind:to="'/retail/shutters'">Blinds, Shutters, &amp; Draperies</router-link></li>
       <li v-show="!retailRoute"><a href="//www.polarshade.com">Business</a></li>
     </ul>
 

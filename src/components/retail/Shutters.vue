@@ -1,7 +1,8 @@
 <template>
   <div id="shuttersPage">
     <div id="shuttersLede">
-      Shutters
+      Blinds, Shutters<br/>
+      &amp; Draperies
     </div>
     <div class="container" id="shutters_atf">
       <p>
