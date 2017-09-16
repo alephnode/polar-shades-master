@@ -12,7 +12,7 @@ import Contact from './components/contact/Contact'
 import RetailLander from './components/retail/RetailLander'
 import RollerShades from './components/retail/RollerShades'
 import Awnings from './components/retail/Awnings'
-import Shutters from './components/retail/Shutters'
+import Solutions from './components/retail/Solutions'
 import BusinessLander from './components/business/BusinessLander'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
@@ -29,7 +29,7 @@ const routes = [
 { path: '/retail', component: RetailLander },
 { path: '/retail/roller-shades', component: RollerShades },
 { path: '/retail/awnings', component: Awnings },
-{ path: '/retail/shutters', component: Shutters }
+{ path: '/retail/other-solutions', component: Solutions }
 ]
 
 // Create the router instance and pass the `routes` option

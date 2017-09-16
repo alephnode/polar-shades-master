@@ -5,7 +5,7 @@
     </div>
     <div class="container" id="about_atf">
       <p>
-        Polar Shades Sun Control corporate office and manufacturing division is located in Henderson, Nevada, just 15 minutes from the “Strip” in Las Vegas.
+        Polar Shades Sun Control corporate office and manufacturing division is located in Henderson, Nevada, just 15 minutes from the “Strip” in Las Vegas. A family owned business started in 1995 by its current owner, Steve Mevius, Polar Shades Sun Control manufactures interior and exterior window covering products.
       </p>
     </div>
     <div class="container-fluid">
@@ -18,12 +18,19 @@
     </div>
     <div class="container" id="about_btf">
       <p>
-        A family owned business started in 1995 by its current owner, Steve Mevius, Polar Shades Sun Control manufactures interior and exterior window covering products. What once was an operation for products installed locally in Las Vegas, has now grown into a major manufacturing company providing their products all over the US, Canada, and Europe. What started as a backyard hobby making solar screens has turned into a passion of creating the best quality products with the best warranty and the best customer service in the industry.
+        What once was an operation for products installed locally in Las Vegas, has now grown into a major manufacturing company providing their products all over the US, Canada, and Europe. What started as a backyard hobby making solar screens has turned into a passion of creating the best quality products with the best warranty and the best customer service in the industry.
       </p>
 
       <p>
         When Steve started the company, he saw that there was a basic need for sun control that just wasn’t being met in the Las Vegas valley. People were constantly looking for ways to control the excessive heat and glare and a good quality solution was nowhere in sight. Because of this, Steve decided to do his own research on sun control products and set out to find the best quality material available to design products that would allow people to take control of their sun control issues. What he found was that the products he needed didn’t exist or meet his strict expectations. He then began the process of creating, engineering, and drawing the products that would meet his high standards and those of Polar Shades customers. Steve met with aluminum extruders, injection mold, sun control specialty fabrics, and motor control companies so he could realize his dream of quality retractable sun control products.
       </p>
+
+      <div class="col-xs-12">
+        <img class="img factory-img img-responsive" src="../../assets/factory_team.jpg" />
+        <div class="caption text-center">
+          A Polar Shade engineer inspecting an interior shade in the Las Vegas factory
+        </div>
+      </div>
 
       <p>
         In 1995 with everything now in place, Steve took an early retirement package from his employer, American Airlines, and along with his father, Art Mevius, started Polar Shades Sun Control. With just the two of them they set out to offer their new products to the people of Las Vegas. In over 20 years, they now have over 50 employees and have expanded their facility to over 21,000 square feet. Polar Shades invested in computerized fabric cutting tables, RF and Impulse fabric welding machines, and inspection hoists that enable Polar Shades to manufacture the “Best Built, Best Backed” line of interior and exterior shades in the nation. Polar Shades now supplies well over 1,000 independent dealers nationwide, sharing their exclusive products. Steve even started a second company called All Seasons Retractable Screens, a retractable screen door company (now run by Art Mevius) that manufactures and supplies a nationwide dealer network.
@@ -92,12 +99,28 @@ export default {
   border-bottom: none;
 }
 
+.factory-img {
+  margin: 40px auto 0px auto;
+  width: 70%
+}
+
+.caption {
+  width: 70%;
+  margin: 15px auto 50px auto;
+  font-size: 16px;
+  font-style: italic;
+}
+
 #about_btf p, #about_atf p {
   font-size: 22px;
   line-height: 2.1em;
   text-align: left;
-  margin: 0px auto 35px auto;
+  margin: 0px auto 60px auto;
   width: 80%;
+}
+
+#about_btf p {
+  margin: 0px auto 35px auto;
 }
 
 #mission p, #mission .signature {
@@ -148,6 +171,10 @@ export default {
   #about_btf p, #about_atf p {
     width: 100%;
     font-size: 18px
+  }
+
+  .caption, .factory-img {
+    width: 100%
   }
 }
 

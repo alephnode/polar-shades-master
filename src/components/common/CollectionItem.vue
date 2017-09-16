@@ -31,7 +31,7 @@
 <style scoped>
 .product-img-container {
   min-height: 300px;
-  margin: 60px auto
+  margin: 75px auto
 }
 
 h3 {
