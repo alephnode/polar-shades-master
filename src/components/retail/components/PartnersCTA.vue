@@ -1,22 +1,19 @@
 <template>
-  <div class="container-fluid" id="awning-cta">
+  <div class="container-fluid" id="partners-cta">
     <p>
-      Want to see more styles? We have over 50 textures and 20 finishes on display at our office. Schedule a tour of our showroom today!
+      Check out our partners who rock!
     </p>
-    <div class="awning-cta-button-container">
-      <router-link class="contact-link" v-bind:to="'/contact'"><div class="awning-cta-button">Let's Schedule My Visit</div></router-link>
-    </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'awning-cta'
+    name: 'partners-cta'
   }
 </script>
 
 <style scoped>
-  #awning-cta {
+  #partners-cta {
     font-family: 'avenir',sans-serif;
     font-size: 22px;
     display: flex;
@@ -24,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom,rgba(60,60,60,0.5),rgba(90,90,90,0.8)),url('../../../assets/ps_manufacturing.jpg');
+    background: linear-gradient(to bottom,rgba(60,60,60,0.3),rgba(90,90,90,0.6)),url('../../../assets/ps_factory.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -32,7 +29,7 @@
   }
 
 
-  .awning-cta-button {
+  .partners-cta-button {
     padding: 15px 30px;
     background: #71D58E;
     color: white;
