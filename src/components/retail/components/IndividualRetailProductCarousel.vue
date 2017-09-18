@@ -15,7 +15,6 @@ export default {
 
 <style scoped>
   .individual-retail-product-carousel {
-    border-bottom: 1px solid #ccc;
     display: flex;
     flex-direction: column;
     justify-content: center;

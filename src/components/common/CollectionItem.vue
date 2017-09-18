@@ -8,7 +8,7 @@
       <div class="col-xs-12 col-md-6 flex-container">
         <h3>{{productTitle}}</h3>
         <p>{{productDesc}}</p>
-        <div class="keyFeaturesLede">Key Features</div>
+        <div v-if="productFeature1" class="keyFeaturesLede">Key Features</div>
         <ul class="productFeaturesList">
           <li v-if="productFeature1">{{productFeature1}}</li>
           <li v-if="productFeature2">{{productFeature2}}</li>
@@ -16,6 +16,10 @@
           <li v-if="productFeature4">{{productFeature4}}</li>
           <li v-if="productFeature5">{{productFeature5}}</li>
         </ul>
+        <div v-if="allSeasonsPiece" class="allSeasonsSectionLede">Proud business collaborator:</div>
+        <div v-if="allSeasonsPiece" class="allSeasonsLogoContainer">
+          <img v-if="allSeasonsPiece" src="../../assets/all-seasons.png" />
+        </div>
       </div>
     </div>
   </div>
@@ -24,7 +28,7 @@
 <script>
   export default {
     name: 'collection-item',
-    props: ['productTitle', 'productDesc', 'productFeature1', 'productFeature2', 'productFeature3', 'productFeature4', 'productFeature5']
+    props: ['productTitle', 'productDesc', 'productFeature1', 'productFeature2', 'productFeature3', 'productFeature4', 'productFeature5', 'allSeasonsPiece']
   }
 </script>
 
@@ -34,6 +38,16 @@
   margin: 75px auto
 }
 
+.allSeasonsLogoContainer img {
+  margin-top: 25px;
+  padding-left: 28pt;
+  width: 60%
+}
+
+.allSeasonsSectionLede {
+  margin-top: 25px;
+}
+
 h3 {
   text-align: left;
   padding-left: 30px;
@@ -41,7 +55,8 @@ h3 {
   font-size: 22px;
   font-family: 'Avenir',sans-serif;
   letter-spacing: 1.5px;
-  margin: 0px
+  margin: 0px;
+  text-transform: uppercase
 }
 
 .flex-container {
@@ -61,13 +76,17 @@ h3 {
   line-height: 2em
 }
 
-.keyFeaturesLede {
+.keyFeaturesLede, .allSeasonsSectionLede {
   font-weight: 900;
   padding-left: 30px;
-  margin: 10px 0px;
   letter-spacing: 1px;
   font-size: 15px;
-  color: #000
+  color: #000;
+  text-transform: uppercase
+}
+
+.keyFeaturesLede {
+  margin: 10px 0px;
 }
 
 p {
