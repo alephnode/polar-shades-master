@@ -17,7 +17,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 200px 0px
+    margin: 0px 0px 175px 0px
   }
 
   #description-container {

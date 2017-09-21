@@ -1,12 +1,15 @@
 <template>
-  <div class="container product-img-container" style="padding-right: 0px; padding-left: 0px">
-    <div class="row">
+  <div class="container-fluid product-img-container" style="padding-right: 0px">
       <div class="col-xs-12 col-md-6 flex-container">
-        <h3>{{productTitle}}</h3>
-        <img v-if="awningIcon" class="icon awning-icon" src='../../assets/awning-icon.png'  />
-        <img v-if="shutterIcon" class="icon" src='../../assets/awning-icon.png'  />
-        <img v-if="screenIcon" class="icon" src='../../assets/screen-icon.png'  />
-        <img v-if="shadeIcon" class="icon" src='../../assets/awning-icon.png'  />
+        <div>
+          <h3>{{productTitle}}</h3>
+            <span>
+              <img v-if="awningIcon" class="icon awning-icon" src='../../assets/awning-icon.png'  />
+              <img v-if="shutterIcon" class="icon shutter-icon" src='../../assets/shutter-icon.png'  />
+              <img v-if="screenIcon" class="icon screen-icon" src='../../assets/screen-icon.png'  />
+              <img v-if="shadeIcon" class="icon" src='../../assets/awning-icon.png'  />
+            </span>
+        </div>
         <p>{{productDesc}}</p>
         <div v-if="productFeature1" class="keyFeaturesLede">Key Features</div>
         <ul class="productFeaturesList">
@@ -25,13 +28,12 @@
         <slot>
         </slot>
       </div>
-    </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'collection-item-right-align',
+    name: 'collection-item-lander-right-align',
     props: ['productTitle', 'productDesc', 'productFeature1', 'productFeature2', 'productFeature3', 'productFeature4', 'productFeature5', 'allSeasonsPiece', 'awningIcon', 'screenIcon', 'shadeIcon', 'shutterIcon']
   }
 </script>
@@ -39,16 +41,10 @@
 <style scoped>
 .product-img-container {
   min-height: 300px;
-  margin: 75px auto
+  margin: 0px auto
 }
 
-.icon {
-  background: #666;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.awning-icon {
+.awning-icon, .screen-icon, .shutter-icon {
   width: 40%;
 }
 
@@ -66,10 +62,10 @@ h3 {
   text-align: left;
   padding-left: 30px;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 42px;
   font-family: 'Avenir',sans-serif;
   letter-spacing: 1.5px;
-  margin: 0px;
+  margin: 20px 0px;
   text-transform: uppercase
 }
 

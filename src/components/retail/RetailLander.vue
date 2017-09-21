@@ -7,27 +7,27 @@
       </p>
     </div>
     <retail-product-lander-top-description class="offerDesc" sectionTitle="What We Offer"></retail-product-lander-top-description>
-    <collection-item style="color: #666; padding-left: 0px; background: #f8f8f8;
+    <collection-item-lander awningIcon="true" style="color: #f8f8f8; padding-left: 0px; background: #999;
     min-height: 380px;" productTitle="Awnings">
       <img style="min-height: 380px; margin-right: 0px; width: 100%" class="img img-responsive" src='../../assets/awningyellow.jpg' />
-    </collection-item>
-    <collection-item-right-align style="color: #666; padding-left: 0px; background: #f8f8f8;
-    min-height: 380px;" productTitle="Blinds, Shutters &amp; Draperies" awningIcon="true">
+    </collection-item-lander>
+    <collection-item-lander-right-align shutterIcon="true" style="color: #f8f8f8; padding-left: 0px; background: #999;
+    min-height: 380px;" productTitle="Blinds, Shutters &amp; Draperies">
       <img class="img img-responsive" src='../../assets/shutter_lander.jpg' />
-    </collection-item-right-align>
-    <individual-retail-product-details productName="Roller Shades"></individual-retail-product-details>
-    <collection-item style="color: #666; padding-left: 0px; background: #f8f8f8;
+    </collection-item-lander-right-align>
+    <individual-retail-product-details productName="Roller Shades" isLander="true" shadeIcon="true"></individual-retail-product-details>
+    <collection-item-lander screenIcon="true" style="color: #f8f8f8; padding-left: 0px; background: #999;
     min-height: 380px;" productTitle="Retractable Screen Doors">
       <img class="img img-responsive" src='../../assets/screen-main.jpg' />
-    </collection-item>
+    </collection-item-lander>
   </div>
 </template>
 
 <script>
 import RetailProductCarousel from './components/RetailProductCarousel'
 import IndividualRetailProductDetails from './components/IndividualRetailProductDetails'
-import CollectionItem from '../common/CollectionItem'
-import CollectionItemRightAlign from '../common/CollectionItemRightAlign'
+import CollectionItemLander from '../common/CollectionItemLander'
+import CollectionItemLanderRightAlign from '../common/CollectionItemLanderRightAlign'
 import RetailProductLanderTopDescription from './components/RetailProductLanderTopDescription'
 
 export default {
@@ -36,8 +36,8 @@ export default {
     RetailProductCarousel,
     RetailProductLanderTopDescription,
     IndividualRetailProductDetails,
-    CollectionItem,
-    CollectionItemRightAlign
+    CollectionItemLander,
+    CollectionItemLanderRightAlign
   }
 }
 </script>
