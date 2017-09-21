@@ -7,14 +7,17 @@
       </p>
     </div>
     <retail-product-lander-top-description class="offerDesc" sectionTitle="What We Offer"></retail-product-lander-top-description>
-    <collection-item style="color: #666" productTitle="Awnings">
-      <img style="min-height: 380px" class="img img-responsive" src='../../assets/awningyellow.jpg' />
+    <collection-item style="color: #666; padding-left: 0px; background: #f8f8f8;
+    min-height: 380px;" productTitle="Awnings">
+      <img style="min-height: 380px; margin-right: 0px; width: 100%" class="img img-responsive" src='../../assets/awningyellow.jpg' />
     </collection-item>
-    <collection-item-right-align style="color: #666" productTitle="Blinds, Shutters &amp; Draperies" awningIcon="true">
+    <collection-item-right-align style="color: #666; padding-left: 0px; background: #f8f8f8;
+    min-height: 380px;" productTitle="Blinds, Shutters &amp; Draperies" awningIcon="true">
       <img class="img img-responsive" src='../../assets/shutter_lander.jpg' />
     </collection-item-right-align>
     <individual-retail-product-details productName="Roller Shades"></individual-retail-product-details>
-    <collection-item style="color: #666" productTitle="Retractable Screen Doors">
+    <collection-item style="color: #666; padding-left: 0px; background: #f8f8f8;
+    min-height: 380px;" productTitle="Retractable Screen Doors">
       <img class="img img-responsive" src='../../assets/screen-main.jpg' />
     </collection-item>
   </div>
@@ -56,6 +59,8 @@ export default {
   margin-top: 60px;
   border-bottom: none;
 }
+
+
 
 #retailLanderAtf p {
   font-size: 22px;

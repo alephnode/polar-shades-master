@@ -1,7 +1,7 @@
 <template>
   <div class="container product-img-container">
     <div class="row">
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6 img-container">
         <slot>
         </slot>
       </div>
@@ -68,6 +68,10 @@ h3 {
   align-content: space-around;
   min-height: 300px;
   text-align: left
+}
+
+.img-container {
+  padding-right: 0px!important
 }
 
 .productFeaturesList {

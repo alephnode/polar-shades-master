@@ -1,5 +1,5 @@
 <template>
-  <div class="container product-img-container">
+  <div class="container product-img-container" style="padding-right: 0px">
     <div class="row">
       <div class="col-xs-12 col-md-6 flex-container">
         <h3>{{productTitle}}</h3>
