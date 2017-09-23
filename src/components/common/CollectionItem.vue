@@ -102,7 +102,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .product-img-container .img-container {
-    padding: 15px!important;
+    padding: 20px!important;
   }
 }
 
