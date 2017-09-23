@@ -27,7 +27,8 @@ export default {
 }
 
 .lander {
-  background: #999;
+  padding: 60px 0px 10px 0px;
+  background: transparent;
 }
 
 h3 {
@@ -35,16 +36,17 @@ h3 {
   margin: 0px;
   width: 100%;
   color: #f8f8f8;
-  background: #999;
   font-weight: bold;
   font-family:  'Museo', sans-serif;
-  padding: 60px 0px;
 }
 
 #individual-details-container {
   padding: 20px 0px 60px 0px;
   min-height: 177px;
-  background: #999;
+  background: linear-gradient(to bottom,rgba(100,100,100,0.2),rgba(100,100,100,0.5)),url('../../../assets/roller_retail_landers.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid #f8f8f8;
 }

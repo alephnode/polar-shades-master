@@ -6,14 +6,11 @@
         </slot>
       </div>
       <div class="col-xs-12 col-md-6 flex-container">
-        <div>
-          <h3>{{productTitle}}</h3>
-          <span>
             <img v-if="awningIcon" class="icon awning-icon" src='../../assets/awning-icon.png'  />
             <img v-if="shutterIcon" class="icon shutter-icon" src='../../assets/shutter-icon.png'  />
             <img v-if="screenIcon" class="icon screen-icon" src='../../assets/screen-icon.png'  />
             <img v-if="shadeIcon" class="icon" src='../../assets/awning-icon.png'  />
-          </span>
+          <h3 class="text-center">{{productTitle}}</h3>
         </div>
         <p>{{productDesc}}</p>
         <div v-if="productFeature1" class="keyFeaturesLede">Key Features</div>
@@ -54,7 +51,8 @@
 }
 
 .awning-icon {
-  height: 75px
+  height: 155px;
+  width: 30%
 }
 
 .allSeasonsLogoContainer img {
@@ -68,7 +66,6 @@
 }
 
 h3 {
-  text-align: left;
   padding-left: 30px;
   font-weight: 900;
   font-size: 42px;
@@ -82,10 +79,10 @@ h3 {
   font-family:  'Avenir', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: space-around;
-  align-content: space-around;
-  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 450px;
   text-align: left
 }
 

@@ -1,30 +1,13 @@
 <template>
   <div class="container-fluid product-img-container" style="padding-right: 0px">
       <div class="col-xs-12 col-md-6 flex-container">
-        <div>
-          <h3>{{productTitle}}</h3>
-            <span>
               <img v-if="awningIcon" class="icon awning-icon" src='../../assets/awning-icon.png'  />
               <img v-if="shutterIcon" class="icon shutter-icon" src='../../assets/shutter-icon.png'  />
               <img v-if="screenIcon" class="icon screen-icon" src='../../assets/screen-icon.png'  />
               <img v-if="shadeIcon" class="icon" src='../../assets/awning-icon.png'  />
-            </span>
-        </div>
-        <p>{{productDesc}}</p>
-        <div v-if="productFeature1" class="keyFeaturesLede">Key Features</div>
-        <ul class="productFeaturesList">
-          <li v-if="productFeature1">{{productFeature1}}</li>
-          <li v-if="productFeature2">{{productFeature2}}</li>
-          <li v-if="productFeature3">{{productFeature3}}</li>
-          <li v-if="productFeature4">{{productFeature4}}</li>
-          <li v-if="productFeature5">{{productFeature5}}</li>
-        </ul>
-        <div v-if="allSeasonsPiece" class="allSeasonsSectionLede">Proud business collaborator:</div>
-        <div v-if="allSeasonsPiece" class="allSeasonsLogoContainer">
-          <img v-if="allSeasonsPiece" src="../../assets/all-seasons.png" />
-        </div>
+            <h3 class="text-center">{{productTitle}}</h3>
       </div>
-      <div class="col-xs-12 col-md-6" style="padding-left: 0px">
+      <div class="col-xs-12 col-md-6" style="padding: 0px">
         <slot>
         </slot>
       </div>
@@ -59,7 +42,6 @@
 }
 
 h3 {
-  text-align: left;
   padding-left: 30px;
   font-weight: 900;
   font-size: 42px;
@@ -73,10 +55,10 @@ h3 {
   font-family:  'Avenir', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: space-around;
-  align-content: space-around;
-  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 465px;
   text-align: left
 }
 
