@@ -44,11 +44,10 @@
 h3 {
   padding-left: 30px;
   font-weight: 900;
-  font-size: 42px;
+  font-size: 52px;
   font-family: 'Avenir',sans-serif;
   letter-spacing: 1.5px;
   margin: 20px 0px;
-  text-transform: uppercase
 }
 
 .flex-container {
