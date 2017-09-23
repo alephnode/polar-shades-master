@@ -98,4 +98,17 @@ export default {
   background: #f7f7f7;
 }
 
+@media screen and (max-width: 768px) {
+#awningsLede {
+  margin-top: 0px;
+  font-size: 52px;
+  height: 300px;
+  min-height: 0px
+}
+
+#awnings_atf p {
+  width: 90%
+}
+}
+
 </style>

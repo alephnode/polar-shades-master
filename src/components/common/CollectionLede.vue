@@ -19,4 +19,10 @@
     font-size: 52px;
     font-weight: 700
   }
+
+  @media screen and (max-width: 768px) {
+    .collection-bg h2 {
+      font-size: 42px
+    }
+  }
 </style>
