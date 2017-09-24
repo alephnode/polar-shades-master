@@ -2,7 +2,7 @@
   <div class="container-fluid" id="ps-footer">
     <div class="row">
     	<div class="col-xs-12">
-        <div class="pull-right footer-text">
+        <div class="footer-text">
           Copyright 2017 Polar Shades. All Rights Reserved.
         </div>
       </div>
@@ -36,7 +36,15 @@
   .footer-text {
     padding-top: 15px;
     margin-right: 20px;
-    font-family: 'Museo'
+    font-family: 'Museo';
+    text-align: right
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer-text {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
 </style>

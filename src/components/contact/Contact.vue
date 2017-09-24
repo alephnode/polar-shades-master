@@ -89,7 +89,8 @@ export default {
 <style>
 #contactPageLede {
   height: auto;
-  min-height: 450px;
+  height: 450px;
+  font-weight: 900;
   width: 100%;
   display: flex;
   align-items: center;
@@ -99,7 +100,7 @@ export default {
   background-size: cover;
   font-size: 100px;
   color: white;
-  font-family:  'Raleway', sans-serif;
+  font-family:  'Museo', sans-serif;
   text-shadow: 0 1px 3px rgba(0,0,0,.6);
 }
 
@@ -161,9 +162,35 @@ export default {
 
 @media screen and (max-width: 768px) {
   #contact p {
-    width: 100%;
-    font-size: 18px
+    width: 95%;
   }
+
+  #contactPageLede {
+    height: 300px;
+    font-size: 52px;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto
+  }
+
+  #contactUsPage .form-group label {
+    padding-left: 0px
+  }
+
+  #contactUsPage .form-group {
+    margin-bottom: 30px
+  }
+
+  .form-container {
+    padding: 80px 0px 0px 0px
+  }
+
+  #contactUsPage .btn {
+    margin-bottom: 40px
+  }
+
 }
 
 </style>

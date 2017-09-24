@@ -52,4 +52,17 @@
     text-shadow: 0 1px 3px rgba(0,0,0,.6);
     font-weight: 400
   }
+
+  @media screen and (max-width: 768px) {
+    #roller-cta {
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 35px;
+      line-height: 1.8em;
+      width: 90%;
+    }
+  }
+
 </style>

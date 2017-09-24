@@ -103,7 +103,7 @@ export default {
   background-size: cover;
   z-index: -1;
   height: auto;
-  min-height: 450px;
+  height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -131,6 +131,16 @@ export default {
   text-align: left;
   margin: 0px auto 35px auto;
   width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  #rollerShadesLede {
+    height: 300px;
+    font-size: 52px;
+  }
+  #rollershades_atf p {
+    width: 95%
+  }
 }
 
 </style>

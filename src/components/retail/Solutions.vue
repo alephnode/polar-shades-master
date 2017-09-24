@@ -106,7 +106,7 @@ export default {
   background-size: cover;
   z-index: -1;
   height: auto;
-  min-height: 450px;
+  height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -157,6 +157,36 @@ export default {
   color: white;
   font-size: 68pt;
   text-shadow: 0 1px 3px rgba(0,0,0,.6);
+}
+
+@media screen and (max-width: 768px) {
+  #solutionsLede {
+    height: 300px;
+    font-size: 52px;
+  }
+
+  #solutions_atf p, .partnerBSD {
+    width: 95%
+  }
+
+  #bsdCollection, #solutionsCollection {
+    padding: 90px 0px
+  }
+
+  .logo-container img {
+    width: 80%;
+    padding: 0px;
+    margin-bottom: 40px
+  }
+
+  .logo-container img:last-child {
+    margin-bottom: 0px
+  }
+
+  .logo-container img:first-child {
+    margin-top: 50px
+  }
+
 }
 
 </style>

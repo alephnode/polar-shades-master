@@ -58,9 +58,6 @@
       width: 90%;
       margin-bottom: 35px;
       line-height: 1.8em;
-      color: white;
-      text-shadow: 0 1px 3px rgba(0,0,0,.6);
-      font-weight: 400;
       font-size: 20px;
     }
   }
