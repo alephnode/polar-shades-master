@@ -26,7 +26,6 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
   }
 
   #carousel-container {
@@ -36,7 +35,7 @@ export default {
     background-position: 50% 50%;
     z-index: -1;
     height: auto;
-    min-height: 500px;
+    height: 500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -45,13 +44,25 @@ export default {
 
   h1 {
     font-size: 100px;
-    position: absolute;
-    top: 35%;
     width: 100%;
     color: white;
     font-weight: bold;
     font-family:  'Museo', sans-serif;
     text-shadow: 0 1px 3px rgba(0,0,0,.6);
     padding: 0px;
+    margin: 0px
   }
+
+  @media screen and (max-width: 768px) {
+  #carousel-container {
+    margin-top: 0px;
+    height: 300px;
+    min-height: 0px
+  }
+
+  h1 {
+    font-size: 52px
+  }
+  }
+
 </style>

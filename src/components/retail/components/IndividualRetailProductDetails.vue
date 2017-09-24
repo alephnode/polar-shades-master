@@ -50,4 +50,11 @@ h3 {
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid #f8f8f8;
 }
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 42px
+  }
+}
+
 </style>

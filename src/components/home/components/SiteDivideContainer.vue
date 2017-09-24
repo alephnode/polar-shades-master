@@ -46,7 +46,10 @@ export default {
 
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 54px;
+      font-size: 52px;
+    }
+    .site-divide-container {
+      height: 50vh
     }
   }
 </style>

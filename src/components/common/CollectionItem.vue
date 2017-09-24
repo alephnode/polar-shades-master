@@ -104,6 +104,14 @@ p {
   .product-img-container .img-container {
     padding: 20px!important;
   }
+
+  h3 {
+    padding-left: 5px
+  }
+
+  p {
+    padding-left: 10px
+  }
 }
 
 </style>

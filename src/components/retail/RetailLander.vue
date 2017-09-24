@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div id="retailLanderContainer">
     <retail-product-carousel></retail-product-carousel>
     <div class="container" id="retailLanderAtf">
       <p>
         Whether you're looking for a complete home automation integration with motored shades and remote access or sectional blinds and draperies, we have you covered. Our exhaustive inventory and affordable prices will satisfy your dream install without breaking the bank.
       </p>
     </div>
-    <individual-retail-product-details productName="What We Offer" style="background: rgb(64, 89, 167); padding: 120px"></individual-retail-product-details>
+    <individual-retail-product-details productName="What We Offer" style="background: rgb(64, 89, 167);" id="individualRetailProductDetailsContainer"></individual-retail-product-details>
     <collection-item-lander awningIcon="true" style="color: #999; padding-left: 0px; background: #f7f7f7;
     min-height: 445px;" productTitle="Awnings">
       <img style="min-height: 475px; margin-right: 0px; width: 100%" class="img img-responsive" src='../../assets/awningyellow.jpg' />
@@ -63,7 +63,9 @@ export default {
   border-bottom: none;
 }
 
-
+#individualRetailProductDetailsContainer {
+  padding: 120px 0px
+}
 
 #retailLanderAtf p {
   font-size: 22px;
@@ -71,6 +73,16 @@ export default {
   text-align: left;
   margin: 0px auto 65px auto;
   width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+#retailLanderAtf p {
+  width: 90%
+}
+
+#individualRetailProductDetailsContainer {
+  padding: 60px 0px;
+}
 }
 
 

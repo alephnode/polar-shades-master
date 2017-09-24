@@ -8,14 +8,12 @@
         Polar Shades Sun Control corporate office and manufacturing division is located in Henderson, Nevada, just 15 minutes from the “Strip” in Las Vegas. A family owned business started in 1995 by its current owner, Steve Mevius, Polar Shades Sun Control manufactures interior and exterior window-covering products.
       </p>
     </div>
-    <div class="container-fluid">
       <iframe id="mapAbout"
         width="100%"
-        height="400"
-        frameborder="0" style="border:0"
+        height="350"
+        frameborder="0" style="border:0;"
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyABHI8ueljiYNIibg58zrJKnz9zrp5cq1M&q=520+East+Sunset+Road,Henderson+NV" allowfullscreen>
       </iframe>
-    </div>
     <div class="container" id="about_btf">
       <p>
         What once was an operation for products installed locally in Las Vegas, has now grown into a major manufacturing company providing their products all over the US, Canada, and Europe. What started as a backyard hobby making solar screens has turned into a passion of creating the best quality products with the best warranty and the best customer service in the industry.
@@ -78,7 +76,7 @@ export default {
   background-size: cover;
   z-index: -1;
   height: auto;
-  min-height: 450px;
+  height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -169,13 +167,36 @@ export default {
 
 @media screen and (max-width: 768px) {
   #about_btf p, #about_atf p {
-    width: 100%;
+    width: 95%;
     font-size: 18px
+  }
+
+  #aboutPageLede {
+    height: 300px;
+    font-size: 52px
   }
 
   .caption, .factory-img {
     width: 100%
   }
+
+  .missionTitle {
+    font-size: 42px;
+    margin-bottom: 15px
+  }
+
+  #mission p {
+    font-size: 18px;
+    margin: 0px auto;
+    width: 85%;
+  }
+
+  #mission .signature {
+    font-size: 16px;
+    margin: 20px auto;
+    width: 85%;
+  }
+
 }
 
 </style>
