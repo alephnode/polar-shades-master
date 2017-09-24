@@ -37,7 +37,10 @@ const routes = [
 // keep it simple for now.
 const router = new VueRouter({
   routes, // short for routes: routes
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition) {
+  return { x: 0, y: 0 }
+}
 })
 //instatinat the vue instance
 new Vue({
